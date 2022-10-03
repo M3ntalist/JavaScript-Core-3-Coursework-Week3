@@ -70,3 +70,16 @@ let hogwarts = [
     occupation: "Teacher",
   },
 ];
+
+
+
+/*
+  The Tasks ask to use Array Destructuring but I cannot find a way to use it,
+  Only Object destructuring.
+*/
+
+//Task1
+hogwarts.filter(({house}) => house === "Gryffindor").forEach(({firstName, lastName}) => console.log(`${firstName} ${lastName}`));
+
+//Task2
+hogwarts.filter(({occupation, pet}) => pet != null && occupation === "Teacher").forEach(({firstName, lastName}) => console.log(`${firstName} ${lastName}`));
